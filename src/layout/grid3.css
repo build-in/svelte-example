@@ -1,0 +1,36 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+.line{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.content-box{
+    width:100vw;
+    height:100vh;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    display: grid;
+    /* 上面 80px \ 下面 40px \ 中间自适应 */
+    grid-template:  "h h h h" 80px
+                    "m c c c" 1fr
+                    "f f f f" 40px;
+     /* 行和列加上间隙 */
+    gap:5px;
+
+}
+.box1{
+    grid-area: h;
+}
+.box2{
+    grid-area: m;
+}
+.box3{
+    grid-area: c;
+}
+.box4{
+    grid-area: f;
+}
+

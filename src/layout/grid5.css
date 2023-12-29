@@ -1,0 +1,48 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+.line{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+.content-box{
+    width:100vw;
+    height:100vh;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    display: grid;
+    /* 上面 80px \ 下面 40px \ 中间自适应 */
+    grid-template:  "a a a a" 80px
+                    "b c c d" 1fr
+                    "e e e f" 1fr
+                    "g h h h" 1fr;
+     /* 行和列加上间隙 */
+    gap:10px;
+
+}
+.box1{
+    grid-area: a;
+}
+.box2{
+    grid-area: b;
+}
+.box3{
+    grid-area: c;
+}
+.box4{
+    grid-area: d;
+}
+.box5{
+    grid-area: e;
+}
+.box6{
+    grid-area: f;
+}
+.box7{
+    grid-area: g;
+}
+.box8{
+    grid-area: h;
+}
